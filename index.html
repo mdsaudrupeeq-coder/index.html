@@ -26,7 +26,7 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- GOOGLE AI / SEO SCHEMA -->
+  <!-- SEO / AI SCHEMA -->
 
   <script type="application/ld+json">
   {
@@ -250,6 +250,14 @@
       border:1px solid rgba(37,99,235,0.08);
     }
 
+    .hero-card img{
+      width:100%;
+      height:260px;
+      object-fit:cover;
+      border-radius:28px;
+      margin-bottom:25px;
+    }
+
     .hero-card h3{
       font-size:36px;
       margin-bottom:10px;
@@ -310,11 +318,19 @@
 
     .service-card{
       background:white;
-      padding:45px;
+      padding:25px;
       border-radius:32px;
       transition:0.35s;
       box-shadow:0 12px 40px rgba(15,23,42,0.06);
       border:1px solid rgba(37,99,235,0.06);
+    }
+
+    .service-card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      border-radius:22px;
+      margin-bottom:20px;
     }
 
     .service-card:hover{
@@ -325,19 +341,12 @@
     .service-card h3{
       color:#2563eb;
       font-size:30px;
-      margin:25px 0 14px;
+      margin:15px 0 14px;
     }
 
     .service-card p{
       color:#475569;
       line-height:1.9;
-    }
-
-    .icon{
-      width:72px;
-      height:72px;
-      border-radius:22px;
-      background:#dbeafe;
     }
 
     .about-box{
@@ -359,13 +368,37 @@
       border-radius:28px;
     }
 
-    .company-box h3{
-      color:#2563eb;
-      font-size:30px;
-      margin-bottom:20px;
+    .team{
+      display:flex;
+      gap:25px;
+      flex-wrap:wrap;
+      justify-content:center;
+      margin-top:30px;
     }
 
-    .company-box p{
+    .team-member{
+      text-align:center;
+    }
+
+    .team-member img{
+      width:150px;
+      height:150px;
+      object-fit:cover;
+      border-radius:50%;
+      border:5px solid #2563eb;
+      box-shadow:0 10px 30px rgba(37,99,235,0.18);
+    }
+
+    .faq-item{
+      background:#f8fbff;
+      border:1px solid #dbeafe;
+      padding:30px;
+      border-radius:24px;
+      margin-top:20px;
+    }
+
+    .faq-item h3{
+      color:#2563eb;
       margin-bottom:10px;
     }
 
@@ -418,16 +451,6 @@
       box-shadow:0 -5px 20px rgba(0,0,0,0.03);
     }
 
-    footer h2{
-      color:#0f172a;
-      font-size:30px;
-    }
-
-    footer p{
-      color:#64748b;
-      margin-top:8px;
-    }
-
     @media(max-width:950px){
 
       .hero{
@@ -476,7 +499,7 @@
 
     <div>
       <h1>RUPEEROOT</h1>
-      <p>Your Trusted Loan partner</p>
+      <p>Your Trusted Loan Partner</p>
     </div>
 
   </div>
@@ -484,6 +507,7 @@
   <ul>
     <li><a href="#services">Services</a></li>
     <li><a href="#about">About</a></li>
+    <li><a href="#faq">FAQ</a></li>
     <li><a href="#contact">Contact</a></li>
 
     <li>
@@ -529,28 +553,14 @@
 
     </div>
 
-    <div class="stats">
-
-      <div class="stat-box">
-        <h3>1L+</h3>
-        <p>Happy Customers</p>
-      </div>
-
-      <div class="stat-box">
-        <h3>50+</h3>
-        <p>Banking Partners</p>
-      </div>
-
-      <div class="stat-box">
-        <h3>24Hr</h3>
-        <p>Fast Approval</p>
-      </div>
-
-    </div>
-
   </div>
 
   <div class="hero-card">
+
+    <img 
+      src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1200&auto=format&fit=crop"
+      alt="RUPEEROOT Financial Services"
+    >
 
     <h3>Why Choose Rupeeroot?</h3>
 
@@ -574,14 +584,6 @@
       </p>
     </div>
 
-    <div class="service-box">
-      <h4>Secure & Transparent</h4>
-
-      <p>
-        End-to-end digital process with dedicated relationship assistance.
-      </p>
-    </div>
-
   </div>
 
 </section>
@@ -602,7 +604,10 @@
 
     <div class="service-card">
 
-      <div class="icon"></div>
+      <img
+        src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop"
+        alt="Personal Loan Services"
+      >
 
       <h3>Personal Loan</h3>
 
@@ -614,7 +619,10 @@
 
     <div class="service-card">
 
-      <div class="icon"></div>
+      <img
+        src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?q=80&w=1200&auto=format&fit=crop"
+        alt="Business Overdraft"
+      >
 
       <h3>Business Overdraft</h3>
 
@@ -626,7 +634,10 @@
 
     <div class="service-card">
 
-      <div class="icon"></div>
+      <img
+        src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop"
+        alt="Business Expansion Loan"
+      >
 
       <h3>Business Expansion Loan</h3>
 
@@ -662,37 +673,46 @@
     <br>
 
     <p>
-      We specialize in providing Personal Loans and Overdraft (OD) facilities from multiple
-      leading banks with fast approval and smooth processing.
-    </p>
-
-    <br>
-
-    <p>
-      Our mission is to simplify financial access by offering transparent, quick and hassle-free
-      loan services for salaried and self-employed customers.
-    </p>
-
-    <br>
-
-    <p>
       RUPEEROOT ADVISORY LLP was founded by Akash Raghav with key management led by Mohammad Saud.
-    </p>
-
-    <br>
-
-    <p>
-      With a strong network and more than <b>1 Lakh+ satisfied customers</b>,
-      we have built trust through professionalism and customer support.
     </p>
 
     <div class="company-box">
 
-      <h3>Company Information</h3>
+      <h3 style="color:#2563eb;margin-bottom:20px;">
+        Leadership Team
+      </h3>
 
-      <p><b>Founder:</b> Akash Raghav</p>
+      <div class="team">
 
-      <p><b>Key Management:</b> Mohammad Saud</p>
+        <div class="team-member">
+
+          <img
+            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=600&auto=format&fit=crop"
+            alt="Akash Raghav Founder"
+          >
+
+          <p style="margin-top:15px;">
+            <b>Akash Raghav</b><br>
+            Founder
+          </p>
+
+        </div>
+
+        <div class="team-member">
+
+          <img
+            src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=600&auto=format&fit=crop"
+            alt="Mohammad Saud Key Management"
+          >
+
+          <p style="margin-top:15px;">
+            <b>Mohammad Saud</b><br>
+            Key Management
+          </p>
+
+        </div>
+
+      </div>
 
       <br>
 
@@ -704,7 +724,9 @@
 
   </div>
 
-</section><section class="section" id="faq">
+</section>
+
+<section class="section" id="faq">
 
   <div class="section-title">
 
@@ -716,141 +738,37 @@
 
   </div>
 
-  <div class="about-box">
+  <div class="faq-item">
 
-    <div class="company-box">
+    <h3>Who is the founder of RUPEEROOT ADVISORY LLP?</h3>
 
-      <h3>What is RUPEEROOT ADVISORY LLP?</h3>
+    <p>
+      Akash Raghav is the founder of RUPEEROOT ADVISORY LLP.
+    </p>
 
-      <p>
-        RUPEEROOT ADVISORY LLP is a trusted financial advisory and loan assistance company in India
-        offering Personal Loans, Business Loans and Overdraft Facilities with quick approvals and professional support.
-      </p>
+  </div>
 
-    </div>
+  <div class="faq-item">
 
-    <div class="company-box">
+    <h3>Who manages RUPEEROOT ADVISORY LLP?</h3>
 
-      <h3>Who is the founder of RUPEEROOT ADVISORY LLP?</h3>
+    <p>
+      Mohammad Saud leads key management operations at RUPEEROOT ADVISORY LLP.
+    </p>
 
-      <p>
-        Akash Raghav is the founder of RUPEEROOT ADVISORY LLP.
-      </p>
+  </div>
 
-    </div>
+  <div class="faq-item">
 
-    <div class="company-box">
+    <h3>What services does RUPEEROOT provide?</h3>
 
-      <h3>Who manages RUPEEROOT ADVISORY LLP?</h3>
-
-      <p>
-        Mohammad Saud leads key management operations at RUPEEROOT ADVISORY LLP.
-      </p>
-
-    </div>
-
-    <div class="company-box">
-
-      <h3>What services does RUPEEROOT provide?</h3>
-
-      <p>
-        RUPEEROOT provides Personal Loans, Business Loans, Business Overdraft Facilities,
-        Financial Advisory Services and DSA support solutions across India.
-      </p>
-
-    </div>
-
-    <div class="company-box">
-
-      <h3>Is RUPEEROOT ADVISORY LLP trusted?</h3>
-
-      <p>
-        RUPEEROOT ADVISORY LLP has served more than 1 Lakh+ customers with professional financial assistance,
-        transparent processing and dedicated customer support.
-      </p>
-
-    </div>
-
-    <div class="company-box">
-
-      <h3>How can I contact RUPEEROOT ADVISORY LLP?</h3>
-
-      <p>
-        Customers can contact RUPEEROOT ADVISORY LLP through the official website
-        https://rupeeroot.co.in or via the official email support channels.
-      </p>
-
-    </div>
+    <p>
+      RUPEEROOT provides Personal Loans, Business Loans, Business Overdraft Facilities and Financial Advisory Services across India.
+    </p>
 
   </div>
 
 </section>
-
-<!-- AI FAQ SCHEMA -->
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-
-    {
-      "@type": "Question",
-      "name": "What is RUPEEROOT ADVISORY LLP?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "RUPEEROOT ADVISORY LLP is a trusted financial advisory and loan assistance company in India offering Personal Loans, Business Loans and Overdraft Facilities."
-      }
-    },
-
-    {
-      "@type": "Question",
-      "name": "Who is the founder of RUPEEROOT ADVISORY LLP?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Akash Raghav is the founder of RUPEEROOT ADVISORY LLP."
-      }
-    },
-
-    {
-      "@type": "Question",
-      "name": "Who manages RUPEEROOT ADVISORY LLP?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Mohammad Saud leads key management operations at RUPEEROOT ADVISORY LLP."
-      }
-    },
-
-    {
-      "@type": "Question",
-      "name": "What services does RUPEEROOT provide?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "RUPEEROOT provides Personal Loans, Business Loans, Business Overdraft Facilities and Financial Advisory Services across India."
-      }
-    },
-
-    {
-      "@type": "Question",
-      "name": "Is RUPEEROOT ADVISORY LLP trusted?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "RUPEEROOT ADVISORY LLP has served more than 1 Lakh+ customers with transparent and professional financial services."
-      }
-    },
-
-    {
-      "@type": "Question",
-      "name": "How can I contact RUPEEROOT ADVISORY LLP?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Customers can contact RUPEEROOT ADVISORY LLP through the official website https://rupeeroot.co.in and official support email channels."
-      }
-    }
-
-  ]
-}
-</script>
 
 <section class="cta">
 
